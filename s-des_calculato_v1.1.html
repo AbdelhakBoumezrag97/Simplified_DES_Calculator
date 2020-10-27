@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simplified DES Calculator</title>
+    <link rel="stylesheet" type="text/css" href="s-des_calculato_v1.1.css">
+	<script type="text/javascript" src="s-des_calculato_v1.1.js">
+	</script>
+</head>
+<body>
+
+	<h1>Simplified DES Calculator</h1>
+	<table border="1" width="100%">
+		<tr>
+			<td id="aaa">Key Generation</td>
+			<td id="aaa">Message Encryption</td>
+		</tr>
+		<tr>
+			<td>Put the key here: <input type="text" id="key" value="1001011110" autofocus placeholder="Key 10 digits"> <button onclick="keyGeneration()">Generate</button></td>
+			<td>Put the Plain text here:___ <input type="text" id="msg" value="11101001" autofocus placeholder="Plain Text 8 digits"><br> Put Key Round One Here: <input type="text" id="resultKeyone" autofocus placeholder="Key Round one" value="11111001"><br> Put Key Round Two Here: <input type="text" id="resultKeyTwo" autofocus placeholder="Key round two" value="10110100"> <button onclick="Encryption()">Encrypte</button></td>
+		</tr>
+		<tr>
+			<td><p id="keyone"></p><hr><p id="keyTwo"></p></td>
+			<td><p id="cipher"></p></td>
+		</tr>
+	</table>
+	<h1>Algorithm</h1>
+	<div class="algo">
+	<div id="bbb">
+      <h3>Key Genaration</h3>
+    <ol>
+		    <li>Permutation 10.</li>
+		    <li>Shifting to the Left by one digit.</li>
+	    	<li>Permutation 8 (Key Round One -> Done).</li>
+	     	<li>Shifting to the left by two digit.</li>
+	      	<li>Permutation 8 (key Round Two -> Done).</li>
+	    </ol>
+	</div>
+
+	<div id="bbb">
+		<h3>Message Encryption.</h3>
+		<ol>
+			<li>Initial Permutaion(Divid into Left and Right).</li>
+			<li>L<sub>1</sub> = R<sub>0</sub> / R<sub>1</sub> = f(L,f(R, Key)).</li>
+			<li>Expention(R) <b>Xor</b> Key Round.</li>
+			<li>S-Box -> Permutaion 4. -> swaps (R, L).</li>
+			<li>After the Two Round we Applie the IP-1.</li>
+		</ol>
+	</div>
+	<div id="">
+		<h3>How it works?</h3>
+		<ol>
+			<li>Put the 10 digits of the key on the key input field</li>
+			<li>Press on the button to generate two keys</li>
+			<li>Copy past each key round on The place designated for it</li>
+			<li>Press on the button to encrypte the message depend on the algorithm</li>
+			<li>and its done ^_^</li>
+		</ol>
+	</div>
+    </div> 
+	<p id="copy">©2020_ByBoumezrag</p>
+
+
+</body>
+</html>

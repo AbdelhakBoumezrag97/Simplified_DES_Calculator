@@ -1,0 +1,68 @@
+h1
+{
+text-align: center;
+color: #1D96A2;
+            
+}
+button
+{
+font-size: 20px;
+}
+button:hover
+{
+background-color: black;
+color: white;
+border-radius: 10px;
+cursor: pointer;
+}
+table
+{
+border: none;
+/*text-align: center;*/
+font:25px bold;
+}
+input
+{
+font-size: 20px;
+
+}
+
+.algo
+{
+	display: flex;
+	border-radius: 10px;
+	border:solid #1D96A2;
+}
+#bbb
+{
+	padding-right: 100px;
+
+}
+#aaa
+{
+	font-style: bold;
+	text-align: center;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background-color: #1D96A2;
+}
+#copy
+{
+	text-align: center;
+	color: grey;
+}
+h3
+{
+	text-align: center;
+	color:#1D96A2;
+}
+#keyone, #keyTwo
+{
+	text-align: center;
+	color: red;
+}
+#cipher
+{
+	text-align: center;
+	color: red;
+}
